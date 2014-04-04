@@ -97,21 +97,7 @@ public class NewController extends AnAction {
             return;
         }
 
-        //content = "prova {{ ControllerName }}";
-
         final PsiFileFactory factory = PsiFileFactory.getInstance(project);
-
-//        SymfonyBundleUtil symfonyBundleUtil = new SymfonyBundleUtil(project);
-//        SymfonyBundle symfonyBundle = symfonyBundleUtil.getContainingBundle(initialBaseDir);
-//
-//        if(symfonyBundle != null) {
-//            bundleName = StringUtils.strip(symfonyBundle.getNamespaceName(), "\\");
-//        }
-//
-//        String path = symfonyBundle.getRelative(initialBaseDir.getVirtualFile());
-//        if(path != null) {
-//            bundleName = bundleName.concat("\\" + path);
-//        }
 
         content = content.replace("{{ ControllerName }}", fileName);
 
